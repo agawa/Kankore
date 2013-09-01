@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3310DC1B17D3139500D831D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310DC1A17D3139500D831D2 /* UIKit.framework */; };
+		3310DC1D17D3139500D831D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310DC1C17D3139500D831D2 /* Foundation.framework */; };
+		3310DC1F17D3139500D831D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310DC1E17D3139500D831D2 /* CoreGraphics.framework */; };
+		3310DC2517D3139500D831D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3310DC2317D3139500D831D2 /* InfoPlist.strings */; };
+		3310DC2717D3139500D831D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310DC2617D3139500D831D2 /* main.m */; };
+		3310DC2B17D3139500D831D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310DC2A17D3139500D831D2 /* AppDelegate.m */; };
+		3310DC2D17D3139500D831D2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3310DC2C17D3139500D831D2 /* Default.png */; };
+		3310DC2F17D3139500D831D2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3310DC2E17D3139500D831D2 /* Default@2x.png */; };
+		3310DC3117D3139500D831D2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3310DC3017D3139500D831D2 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3310DC1717D3139500D831D2 /* Kankore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kankore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3310DC1A17D3139500D831D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3310DC1C17D3139500D831D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3310DC1E17D3139500D831D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3310DC2217D3139500D831D2 /* Kankore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kankore-Info.plist"; sourceTree = "<group>"; };
+		3310DC2417D3139500D831D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3310DC2617D3139500D831D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3310DC2817D3139500D831D2 /* Kankore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kankore-Prefix.pch"; sourceTree = "<group>"; };
+		3310DC2917D3139500D831D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3310DC2A17D3139500D831D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3310DC2C17D3139500D831D2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3310DC2E17D3139500D831D2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3310DC3017D3139500D831D2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3310DC1417D3139500D831D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3310DC1B17D3139500D831D2 /* UIKit.framework in Frameworks */,
+				3310DC1D17D3139500D831D2 /* Foundation.framework in Frameworks */,
+				3310DC1F17D3139500D831D2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3310DC0E17D3139500D831D2 = {
+			isa = PBXGroup;
+			children = (
+				3310DC2017D3139500D831D2 /* Kankore */,
+				3310DC1917D3139500D831D2 /* Frameworks */,
+				3310DC1817D3139500D831D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3310DC1817D3139500D831D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3310DC1717D3139500D831D2 /* Kankore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3310DC1917D3139500D831D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3310DC1A17D3139500D831D2 /* UIKit.framework */,
+				3310DC1C17D3139500D831D2 /* Foundation.framework */,
+				3310DC1E17D3139500D831D2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3310DC2017D3139500D831D2 /* Kankore */ = {
+			isa = PBXGroup;
+			children = (
+				3310DC2917D3139500D831D2 /* AppDelegate.h */,
+				3310DC2A17D3139500D831D2 /* AppDelegate.m */,
+				3310DC2117D3139500D831D2 /* Supporting Files */,
+			);
+			path = Kankore;
+			sourceTree = "<group>";
+		};
+		3310DC2117D3139500D831D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3310DC2217D3139500D831D2 /* Kankore-Info.plist */,
+				3310DC2317D3139500D831D2 /* InfoPlist.strings */,
+				3310DC2617D3139500D831D2 /* main.m */,
+				3310DC2817D3139500D831D2 /* Kankore-Prefix.pch */,
+				3310DC2C17D3139500D831D2 /* Default.png */,
+				3310DC2E17D3139500D831D2 /* Default@2x.png */,
+				3310DC3017D3139500D831D2 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3310DC1617D3139500D831D2 /* Kankore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3310DC3417D3139500D831D2 /* Build configuration list for PBXNativeTarget "Kankore" */;
+			buildPhases = (
+				3310DC1317D3139500D831D2 /* Sources */,
+				3310DC1417D3139500D831D2 /* Frameworks */,
+				3310DC1517D3139500D831D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kankore;
+			productName = Kankore;
+			productReference = 3310DC1717D3139500D831D2 /* Kankore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3310DC0F17D3139500D831D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Masaya Kamakua";
+			};
+			buildConfigurationList = 3310DC1217D3139500D831D2 /* Build configuration list for PBXProject "Kankore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3310DC0E17D3139500D831D2;
+			productRefGroup = 3310DC1817D3139500D831D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3310DC1617D3139500D831D2 /* Kankore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3310DC1517D3139500D831D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3310DC2517D3139500D831D2 /* InfoPlist.strings in Resources */,
+				3310DC2D17D3139500D831D2 /* Default.png in Resources */,
+				3310DC2F17D3139500D831D2 /* Default@2x.png in Resources */,
+				3310DC3117D3139500D831D2 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3310DC1317D3139500D831D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3310DC2717D3139500D831D2 /* main.m in Sources */,
+				3310DC2B17D3139500D831D2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3310DC2317D3139500D831D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3310DC2417D3139500D831D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3310DC3217D3139500D831D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3310DC3317D3139500D831D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3310DC3517D3139500D831D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kankore/Kankore-Prefix.pch";
+				INFOPLIST_FILE = "Kankore/Kankore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3310DC3617D3139500D831D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kankore/Kankore-Prefix.pch";
+				INFOPLIST_FILE = "Kankore/Kankore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3310DC1217D3139500D831D2 /* Build configuration list for PBXProject "Kankore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3310DC3217D3139500D831D2 /* Debug */,
+				3310DC3317D3139500D831D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3310DC3417D3139500D831D2 /* Build configuration list for PBXNativeTarget "Kankore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3310DC3517D3139500D831D2 /* Debug */,
+				3310DC3617D3139500D831D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3310DC0F17D3139500D831D2 /* Project object */;
+}
