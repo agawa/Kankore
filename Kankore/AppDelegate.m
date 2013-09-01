@@ -7,15 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "KaihatsuTableViewController.h"
+#import "KenzouTableViewController.h"
+#import "TopMenuController.h"
 
 @implementation AppDelegate
+
+@synthesize window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
+    rootController_ = [[UITabBarController alloc] init];
+    
+    TopMenuController* topMenuController = [[TopMenuController alloc] init];
+    
+    rootController_ = [[UINavigationController alloc] initWithRootViewController:topMenuController];
+    
+    [window addSubview:rootController_.view];
+    [window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

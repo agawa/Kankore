@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    UIWindow* window;
+    UIViewController* rootController_;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
