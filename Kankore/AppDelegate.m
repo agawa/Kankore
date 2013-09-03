@@ -10,6 +10,7 @@
 #import "KaihatsuTableViewController.h"
 #import "KenzouTableViewController.h"
 #import "TopMenuController.h"
+#import "EnseiMenuController.h"
 
 @implementation AppDelegate
 
@@ -18,12 +19,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    viewControllers = [[NSMutableArray alloc] init];
     
+    // 工廠タブ
     TopMenuController* topMenuController = [[TopMenuController alloc] init];
     _navigationController = [[UINavigationController alloc] initWithRootViewController:topMenuController];
-    
-    viewControllers = [[NSMutableArray alloc] init];
     [viewControllers addObject:_navigationController];
+
+    // 遠征成功構成タブ
+    EnseiMenuController* enseiMenuController = [[EnseiMenuController alloc] init];
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:enseiMenuController];
+    [viewControllers addObject: _navigationController];
     
     _tabBarController = [[UITabBarController alloc] init];
     _tabBarController.viewControllers = viewControllers;
