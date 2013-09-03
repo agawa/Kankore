@@ -19,13 +19,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    rootController_ = [[UITabBarController alloc] init];
-    
     TopMenuController* topMenuController = [[TopMenuController alloc] init];
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:topMenuController];
     
-    rootController_ = [[UINavigationController alloc] initWithRootViewController:topMenuController];
+    viewControllers = [[NSMutableArray alloc] init];
+    [viewControllers addObject:_navigationController];
     
-    [window addSubview:rootController_.view];
+    _tabBarController = [[UITabBarController alloc] init];
+    _tabBarController.viewControllers = viewControllers;
+    
+    [window addSubview:_tabBarController.view];
     [window makeKeyAndVisible];
     
     

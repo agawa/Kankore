@@ -10,7 +10,9 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     UIWindow* window;
-    UIViewController* rootController_;
+    UINavigationController* _navigationController;
+    UITabBarController* _tabBarController;
+    NSMutableArray* viewControllers;
 }
 
 @property (strong, nonatomic) UIWindow *window;

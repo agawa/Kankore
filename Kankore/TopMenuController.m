@@ -20,7 +20,6 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
         self.title = @"工廠レシピ";
         
         _items = @[@"建造", @"開発"];
