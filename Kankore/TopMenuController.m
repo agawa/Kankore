@@ -23,7 +23,7 @@
         // Custom initialization
         self.title = @"工廠レシピ";
         
-        items_ = [[NSArray alloc] initWithObjects:@"建造", @"開発", nil];
+        _items = @[@"建造", @"開発"];
     }
     return self;
 }
@@ -54,16 +54,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [items_ count];
+    return [_items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
-    // Configure the cell...
-    cell.textLabel.text = [items_ objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Configure the cell..
+    cell.textLabel.text = [_items objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -112,7 +117,7 @@
 {
     id viewController;
     
-    NSString* str = [items_ objectAtIndex:indexPath.row];
+    NSString* str = [_items objectAtIndex:indexPath.row];
     if([str isEqualToString:@"建造"]) {
         viewController = [[KenzouTableViewController alloc] init];
     } else if([str isEqualToString:@"開発"]) {

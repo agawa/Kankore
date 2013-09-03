@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface KaihatsuTableViewController : UITableViewController {
-@private NSArray* items_;
+@private NSArray* _items;
 }
 @end

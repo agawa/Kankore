@@ -30,12 +30,12 @@
 	// Do any additional setup after loading the view.
     
     self.title = pageTag;
-    webView_ = [[UIWebView alloc] init];
-    webView_.delegate = self;
-    webView_.frame = self.view.bounds;
-    webView_.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    webView_.scalesPageToFit = YES;
-    [self.view addSubview:webView_];
+    _webView = [[UIWebView alloc] init];
+    _webView.delegate = self;
+    _webView.frame = self.view.bounds;
+    _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _webView.scalesPageToFit = YES;
+    [self.view addSubview:_webView];
 }
 
 - (void) loadHTMLFile:(NSString*) path {
@@ -45,7 +45,7 @@
     NSBundle *mainBundle = [NSBundle mainBundle];
     if(absolutePath = [mainBundle pathForResource:resourceName ofType:nil]) {
         NSData* data = [NSData dataWithContentsOfFile:absolutePath];
-        [webView_ loadData:data MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:[NSURL fileURLWithPath:[mainBundle bundlePath]]];
+        [_webView loadData:data MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:[NSURL fileURLWithPath:[mainBundle bundlePath]]];
     } else {
         NSLog(@"%@ not found", resourceName);
     }

@@ -36,7 +36,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    items_ = [[NSArray alloc] initWithObjects:@"艦載機", @"機銃・砲・砲弾", @"音探・爆雷", @"電探", @"機関", nil];
+    _items = @[@"艦載機", @"機銃・砲・砲弾", @"音探・爆雷", @"電探", @"機関"];
     NSLog(@"viewDidLoad");
 
 }
@@ -58,16 +58,21 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [items_ count];
+    return [_items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
 
     // Configure the cell...
-    cell.textLabel.text = [items_ objectAtIndex:indexPath.row];
+    cell.textLabel.text = [_items objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -117,7 +122,7 @@
 {
     
     WebViewController* viewController = [[WebViewController alloc] init];
-    viewController.pageTag = [items_ objectAtIndex:indexPath.row];
+    viewController.pageTag = [_items objectAtIndex:indexPath.row];
     
     if(viewController) {
         [self.navigationController pushViewController:viewController animated:YES];

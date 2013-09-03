@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface KenzouTableViewController : UITableViewController {
-@private NSArray* items_;
+@private NSArray* _items;
 }
 
 @end

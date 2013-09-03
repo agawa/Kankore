@@ -31,7 +31,7 @@
     [super viewDidLoad];
 
     self.title = @"建造";
-    items_ = [[NSArray alloc] initWithObjects:@"駆逐艦", @"軽巡洋艦", @"重巡洋艦", @"戦艦", @"空母", nil];
+    _items = @[@"駆逐艦", @"軽巡洋艦", @"重巡洋艦", @"戦艦", @"空母"];
     
 }
 
@@ -52,16 +52,21 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [items_ count];
+    return [_items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     
     // Configure the cell...
-    cell.textLabel.text = [items_ objectAtIndex:indexPath.row];
+    cell.textLabel.text = [_items objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -108,21 +113,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-
     WebViewController* viewController = [[WebViewController alloc] init];
-    viewController.pageTag = [items_ objectAtIndex:indexPath.row];
+    viewController.pageTag = [_items objectAtIndex:indexPath.row];
 
     if(viewController) {
         [self.navigationController pushViewController:viewController animated:YES];
     }
-
 }
 
 @end

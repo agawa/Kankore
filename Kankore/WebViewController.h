@@ -10,7 +10,7 @@
 
 @interface WebViewController : UIViewController<UIWebViewDelegate> {
     NSString* pageTag;
-@private UIWebView* webView_;
+@private UIWebView* _webView;
 }
 
 @property NSString* pageTag;
