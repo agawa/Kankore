@@ -10,7 +10,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     UIWindow* window;
-    UINavigationController* _navigationController;
+    UINavigationController* _kousyoNavigationController;
+    UINavigationController* _enseiNavigationController;
     UITabBarController* _tabBarController;
     NSMutableArray* viewControllers;
 }

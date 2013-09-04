@@ -23,13 +23,13 @@
     
     // 工廠タブ
     TopMenuController* topMenuController = [[TopMenuController alloc] init];
-    _navigationController = [[UINavigationController alloc] initWithRootViewController:topMenuController];
-    [viewControllers addObject:_navigationController];
+    _kousyoNavigationController = [[UINavigationController alloc] initWithRootViewController:topMenuController];
+    [viewControllers addObject:_kousyoNavigationController];
 
     // 遠征成功構成タブ
     EnseiMenuController* enseiMenuController = [[EnseiMenuController alloc] init];
-    _navigationController = [[UINavigationController alloc] initWithRootViewController:enseiMenuController];
-    [viewControllers addObject: _navigationController];
+    _enseiNavigationController = [[UINavigationController alloc] initWithRootViewController:enseiMenuController];
+    [viewControllers addObject: _enseiNavigationController];
     
     _tabBarController = [[UITabBarController alloc] init];
     _tabBarController.viewControllers = viewControllers;
